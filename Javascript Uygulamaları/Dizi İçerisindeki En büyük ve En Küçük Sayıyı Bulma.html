@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>Diziler</title>
+
+</head>
+ 
+<body>
+
+<p id="demo"></p>
+<script>
+var dizi1=[5,8,65,-8,789,-500];
+var min=0;
+var max=0;
+for(var i=0;i<dizi1.length;i++)
+{
+    document.write(dizi1[i]+"<br>");
+    if (dizi1[i] < min){
+        min=dizi1[i];
+    }
+    else if(dizi1[i]>max){
+        max=dizi1[i];
+        }
+}
+    document.write("En küçük sayı: "+min+"<br>");
+    document.write("En büyük sayı: "+max);
+
+
+</script>
+
+
+
+</body>
+</html>

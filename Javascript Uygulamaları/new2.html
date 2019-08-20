@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JavaScript ile Asal Sayı Bulma</title>
+</head>
+ 
+<body>
+ 
+Sayı Giriniz: <input type="text" id="sayi"><br>
+<button type="button" onclick=asal()>Kontrol Et</button>
+<p id="demo"></p>
+<p id="demo2"></p>
+<script>
+function asal(){
+
+    var a=document.getElementById("sayi").value;
+    a=Number(a);
+    adet=2;
+    if (a<=1)
+        document.getElementById("demo").innerHTML="Sayı asal değildir. ";
+    else{
+        for(var i=2;i<a;i++)
+        {
+            
+            if(a%i==0)  
+            {
+                document.getElementById("demo").innerHTML="Sayı asal değildir.";
+                adet++;
+                
+            }
+             if(a==2)
+            document.getElementById("demo").innerHTML="Sayı asal değildir. ";
+            
+            else
+            
+                document.getElementById("demo").innerHTML="Sayı asaldır. "
+
+           
+        }
+                
+        }
+    
+document.getElementById("demo2").innerHTML=adet+" adet böleni vardır.";
+}
+
+</script>
+</body>
+</html>

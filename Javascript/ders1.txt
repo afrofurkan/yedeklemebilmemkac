@@ -1,0 +1,193 @@
+*************************************************************ÖRNEK1*************************************************************
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+
+<title>Sayfa baþlýðý</title>
+
+</head>
+
+
+
+<body>
+
+
+<h2>JavaScript ile ne yapýlýr?</h2>
+
+
+
+<p id="demo">JavaScript ile HTML içeriðini deðiþtirebilirsin.</p>
+
+
+
+<button type="button" onclick='document.getElementById("demo").innerHTML = 
+"Merhaba JavaScript!"'>Buraya Týkla!</button>
+
+
+
+
+
+</body>
+
+
+</html>
+
+
+
+
+
+
+*************************************************************ÖRNEK2*************************************************************
+ <!DOCTYPE html>
+
+
+<html>
+
+
+<head>
+
+<title>Sayfa baþlýðý</title>
+
+</head>
+
+
+<body>
+
+
+<h2>JavaScript ile neler yapýlabilir?</h2>
+
+
+
+<p id="demo">JavaScript ile HTML elementine ait stiller deðiþtirilebilir</p>
+
+
+
+<button type="button" onclick="document.getElementById('demo').style.fontSize=
+'50px'">Yazýyý büyüt!</button>
+
+
+</body>
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+*************************************************************ÖRNEK3*************************************************************
+
+<!DOCTYPE html>
+
+
+<html>
+
+
+<head>
+
+
+   <script>
+
+
+   function yaziyiDegistir() {
+ 
+   document.getElementById("demo").innerHTML = "Yazý deðiþtirildi!";
+}
+
+
+   </script>
+
+
+</head>
+
+
+
+<body>
+
+
+
+   <h1>Bir Web Sayfasý</h1>
+
+
+   <p id="demo">bu bir paragraf</p>
+
+
+   <button type="button" onclick="yaziyiDegistir()">Dene</button>
+
+
+
+</body>
+
+
+</html>   
+
+
+
+
+
+*************************************************************ÖRNEK4*************************************************************
+
+<!DOCTYPE html>
+
+<html>
+
+
+
+<body>
+
+
+
+
+<p id="demo">bu bir paragraf</p>
+
+
+<button type="button" onclick="yaziyiDegistir()">Dene</button>
+
+
+
+<script>
+
+
+function yaziyiDegistir() {
+    
+
+document.getElementById("demo").innerHTML = "Yazý deðiþtirildi!";
+}
+
+
+
+</script>
+
+
+
+</body>
+
+
+
+</html>   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

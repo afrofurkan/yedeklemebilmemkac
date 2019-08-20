@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Faktoriyel</title>
+</head>
+<body>
+Faktöriyeli alınacak sayıyı giriniz: <input type="text"id="sayi"><br>
+<button type="button" onclick=faktoriyel()>Hesapla</button>
+
+<script>
+
+function faktoriyel(){
+    var a=document.getElementById("sayi").value;
+    a=Number(a);
+    sonuc=1;
+    for(var i=1 ; i<=a ; i++)
+    {
+        sonuc= sonuc * 1   ;
+    }
+    alert("Sonuc: "+sonuc);
+    
+	}
+
+
+
+
+</script>
+</body>
+</html>

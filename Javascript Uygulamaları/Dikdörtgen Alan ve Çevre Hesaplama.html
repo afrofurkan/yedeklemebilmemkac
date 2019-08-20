@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>DİKDÖRTGEN ALAN VE ÇEVRE</title>
+
+</head>
+ 
+<body>
+<form>
+Kısa Kenar:<input type="text" id="kisa">
+Uzun Kenar:<input type="text" id="uzun"><br><br><br>
+<button type="button" onclick=alan()>Alan</button>
+<button type="button" onclick=cevre()>Çevre</button><br>
+</form>
+<p id="demo"></p>
+<script>
+function alan(){
+    var kkenar=document.getElementById("kisa").value;
+    var ukenar=document.getElementById("uzun").value;
+    kkenar=Number(kkenar);
+    ukenar=Number(ukenar);
+    var sonuc=kkenar*ukenar;
+    document.getElementById("demo").innerHTML=sonuc;
+}
+function cevre(){
+    var k=document.getElementById("kisa").value;
+    var u=document.getElementById("uzun").value;
+    k=Number(k);
+    u=Number(u);
+    var sonuc=2*(k+u);
+    document.getElementById("demo").innerHTML=sonuc;
+}
+</script>
+
+
+
+</body>
+</html>

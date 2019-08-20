@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>HEEE</title>
+
+</head>
+ 
+<body>
+
+<form>
+Kısa Kenar: <input type="text" id="kisa">
+Uzun Kenar: <input type="text" id="uzun"><br><br><br>
+<button type="button" onclick=alan()>ALAN</button>
+<button type="button" onclick=cevre()>ÇEVRE</button>
+</form>
+<p id="demo"></p>
+
+
+<script>
+function alan(){
+   var kkenar=document.getELementById("kisa").value;
+   var ukenar=document.getELementById("uzun").value;
+   kkenar=Number(kkenar);
+   ukenar=Number(ukenar);
+   var sonuc=kkenar*ukenar;
+   document.getELementById("demo").innerHTML=sonuc;
+}
+   
+   function cevre() {
+   var k=document.getELementById("kisa").value;
+   var u=document.getELementById("uzun").value;
+   k=Number(k);
+   u=Number(u);
+   var sonuc=2* (k+u);   
+   document.getELementById("demo").innerHTML=sonuc;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+</body>
+</head>

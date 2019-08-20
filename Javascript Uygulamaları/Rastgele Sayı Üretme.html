@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+ 
+<p id="p1"> 0-100 Arası Rastgele Sayı Üret</p>
+ 
+<button onclick="Sayı()">Bul</button>
+ 
+<p id="demo"></p>
+ 
+<script>
+function Sayı() {
+    var str = document.getElementById("p1").innerHTML;
+    var konum = str.search("a");
+    document.getElementById("demo").innerHTML = Math.floor( Math.random()*100);
+}
+</script>
+ 
+</body>
+</html>
